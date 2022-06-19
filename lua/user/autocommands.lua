@@ -5,6 +5,12 @@ api.nvim_create_autocmd("BufWritePre", {
 	group = TrimWhiteSpaceGrp,
 })
 
+-- go to last loc when opening a buffer
+vim.api.nvim_create_autocmd(
+	"BufReadPost",
+	{ command = [[if line("'\"") > 1 && line("'\"") <= line("$") | execute "normal! g`\"" | endif]] }
+)
+
 -- Use 'q' to quit from common plugins
 vim.api.nvim_create_autocmd({ "FileType" }, {
 	pattern = { "qf", "help", "man", "lspinfo", "spectre_panel", "lir" },
