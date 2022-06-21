@@ -131,6 +131,7 @@ return packer.startup(function(use)
 		requires = "nvim-lua/plenary.nvim",
 		config = get_config("todo"),
 	})
+	use("rcarriga/nvim-notify")
 	use({ "echasnovski/mini.nvim", branch = "stable", config = get_config("mini") })
 	use({ "folke/which-key.nvim" })
 	use({ "MattesGroeger/vim-bookmarks" })

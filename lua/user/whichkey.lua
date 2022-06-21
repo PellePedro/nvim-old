@@ -125,6 +125,7 @@ local bslash_mappings = {
 	["5"] = { "<cmd>GoDebug -n<cr>", "Debug test" },
 	["a"] = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
 	["f"] = { "<cmd>lua vim.lsp.buf.format {async = true}<cr>", "LSP Format" },
+	["r"] = { "<cmd>lua vim.lsp.buf.rename()<cr>", "LSP Rename" },
 	["s"] = {
 		"<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For > ')})<cr>",
 		"Grep for >",
