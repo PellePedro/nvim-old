@@ -29,3 +29,6 @@ require("user.config.telescope")
 require("user.config.toggleterm")
 require("user.config.treesitter")
 require("user.config.dap-go").setup()
+
+-- set fillchars+=vert:\|
+-- :hi vertsplit guifg=fg guibg=bg
