@@ -118,6 +118,7 @@ local m_mappings = {
 }
 
 local bslash_mappings = {
+	["\\"] = { "<cmd>highlight WinSeparator guibg=None<cr>", "Thin Border" },
 	["1"] = { "<cmd>SymbolsOutline<cr>", "Symbols" },
 	["2"] = { "<cmd>Telescope buffers<cr>", "Buffers" },
 	["3"] = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "LazyGit" },
