@@ -43,7 +43,7 @@ dapui.setup({
 			-- { id = "watches", size = 00.25 },
 		},
 		size = 40,
-		position = "right", -- Can be "left", "right", "top", "bottom"
+		position = "left", -- Can be "left", "right", "top", "bottom"
 	},
 	tray = {
 		elements = {},
