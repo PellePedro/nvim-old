@@ -13,7 +13,7 @@ vim.api.nvim_create_autocmd(
 
 -- Use 'q' to quit from common plugins
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "qf", "help", "man", "lspinfo", "spectre_panel", "lir" },
+  pattern = { "qf", "help", "man", "lspinfo", "spectre_panel", "lir", "DressingSelect" },
   callback = function()
     vim.cmd([[
       nnoremap <silent> <buffer> q :close<CR> 
@@ -60,13 +60,13 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
 
 vim.api.nvim_create_autocmd({ "VimEnter" }, {
   callback = function()
-    vim.cmd "hi link illuminatedWord LspReferenceText"
+    vim.cmd("hi link illuminatedWord LspReferenceText")
   end,
 })
 
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
   callback = function()
-    local luasnip = require "luasnip"
+    local luasnip = require("luasnip")
     if luasnip.expand_or_jumpable() then
       luasnip.unlink_current()
     end

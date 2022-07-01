@@ -91,7 +91,12 @@ return packer.startup(function(use)
   use("simrat39/rust-tools.nvim")
   use("b0o/SchemaStore.nvim")
   use({ "kevinhwang91/nvim-ufo", requires = "kevinhwang91/promise-async" })
-
+  use({
+    "kosayoda/nvim-lightbulb",
+    requires = "antoinemadec/FixCursorHold.nvim",
+  })
+  -- UI
+  use({ "stevearc/dressing.nvim" })
   -- use({
   -- 	"kosayoda/nvim-lightbulb",
   -- 	setup = function()
